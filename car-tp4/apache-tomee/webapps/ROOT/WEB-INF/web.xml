@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+ <servlet>
+ 	<servlet-name>Main</servlet-name>
+ 	<servlet-class>tp4.Main</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>Main</servlet-name>
+ 	<url-pattern>/car/tp4</url-pattern>
+ </servlet-mapping>
+</web-app>
