@@ -1,0 +1,458 @@
+avr. 18, 2016 10:50:20 PM org.apache.catalina.core.AprLifecycleListener init
+INFOS: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/honore/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+avr. 18, 2016 10:50:20 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:50:20 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:50:21 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: ********************************************************************************
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: OpenEJB http://openejb.apache.org/
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Startup: Mon Apr 18 22:50:21 CEST 2016
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Copyright 1999-2013 (C) Apache OpenEJB Project, All Rights Reserved.
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Version: 4.7.1
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Build date: 20140912
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Build time: 01:43
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: ********************************************************************************
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: openejb.home = /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee
+avr. 18, 2016 10:50:21 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: openejb.base = /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee
+avr. 18, 2016 10:50:21 PM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFOS: Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@3439f68d
+avr. 18, 2016 10:50:21 PM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFOS: Succeeded in installing singleton service
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.ConfigurationFactory init
+INFOS: openejb configuration file is '/Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/conf/tomee.xml'
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+avr. 18, 2016 10:50:21 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.system.apps=true'
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFOS: Configuring enterprise application: openejb
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Using openejb.deploymentId.format '{ejbName}'
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb openejb/Deployer: EjbDeployment(deployment-id=openejb/Deployer)
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb openejb/ConfigurationInfo: EjbDeployment(deployment-id=openejb/ConfigurationInfo)
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb MEJB: EjbDeployment(deployment-id=MEJB)
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.AutoConfig createContainer
+INFOS: Auto-creating a container for bean openejb/Deployer: Container(type=STATELESS, id=Default Stateless Container)
+avr. 18, 2016 10:50:21 PM org.apache.openejb.config.AppInfoBuilder build
+INFOS: Enterprise application "openejb" loaded.
+avr. 18, 2016 10:50:21 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating TransactionManager(id=Default Transaction Manager)
+avr. 18, 2016 10:50:21 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating SecurityService(id=Tomcat Security Service)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Container(id=Default Stateless Container)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFOS: Assembling app: openejb
+avr. 18, 2016 10:50:22 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.jndiname.format={deploymentId}{interfaceType.openejbLegacyName}'
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=openejb/DeployerBusinessRemote) --> Ejb(deployment-id=openejb/Deployer)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/openejb/Deployer!org.apache.openejb.assembler.Deployer) --> Ejb(deployment-id=openejb/Deployer)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/openejb/Deployer) --> Ejb(deployment-id=openejb/Deployer)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=openejb/ConfigurationInfoBusinessRemote) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/openejb/ConfigurationInfo!org.apache.openejb.assembler.classic.cmd.ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/openejb/ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=MEJB) --> Ejb(deployment-id=MEJB)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/MEJB!javax.management.j2ee.ManagementHome) --> Ejb(deployment-id=MEJB)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/MEJB) --> Ejb(deployment-id=MEJB)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler deployMBean
+INFOS: Deployed MBean(openejb.user.mbeans:application=openejb,group=org.apache.openejb.assembler.monitoring,name=JMXDeployer)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFOS: Deployed Application(path=openejb)
+avr. 18, 2016 10:50:22 PM org.apache.openejb.server.SimpleServiceManager start
+INFOS:   ** Bound Services **
+avr. 18, 2016 10:50:22 PM org.apache.openejb.server.SimpleServiceManager printRow
+INFOS:   NAME                 IP              PORT  
+avr. 18, 2016 10:50:22 PM org.apache.openejb.server.SimpleServiceManager start
+INFOS: -------
+avr. 18, 2016 10:50:22 PM org.apache.openejb.server.SimpleServiceManager start
+INFOS: Ready!
+avr. 18, 2016 10:50:22 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 2707 ms
+avr. 18, 2016 10:50:22 PM org.apache.tomee.catalina.OpenEJBNamingContextListener bindResource
+INFOS: Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+avr. 18, 2016 10:50:22 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Resource(id=UserDatabase)
+avr. 18, 2016 10:50:22 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service Catalina
+avr. 18, 2016 10:50:22 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat (TomEE)/7.0.55 (1.7.1)
+avr. 18, 2016 10:50:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Déploiement de l'archive /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT.war de l'application web
+avr. 18, 2016 10:50:22 PM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFOS: ------------------------- localhost -> /
+avr. 18, 2016 10:50:22 PM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFOS: Configuring enterprise application: /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT
+avr. 18, 2016 10:50:23 PM org.apache.tomee.catalina.TomcatWebAppBuilder startInternal
+GRAVE: Unable to deploy collapsed ear in war StandardEngine[Catalina].StandardHost[localhost].StandardContext[]
+org.apache.openejb.OpenEJBException: Unable to load servlet class: tp4.Main: tp4.Main
+	at org.apache.openejb.config.AnnotationDeployer$ProcessAnnotatedBeans.deploy(AnnotationDeployer.java:2113)
+	at org.apache.openejb.config.AnnotationDeployer$ProcessAnnotatedBeans.deploy(AnnotationDeployer.java:1843)
+	at org.apache.openejb.config.AnnotationDeployer.deploy(AnnotationDeployer.java:360)
+	at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:401)
+	at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:962)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1214)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1087)
+	at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:130)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5378)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: tp4.Main
+	at org.apache.openejb.core.TempClassLoader.loadClass(TempClassLoader.java:166)
+	at org.apache.openejb.core.TempClassLoader.loadClass(TempClassLoader.java:79)
+	at org.apache.openejb.config.AnnotationDeployer$ProcessAnnotatedBeans.deploy(AnnotationDeployer.java:2106)
+	... 21 more
+
+avr. 18, 2016 10:50:23 PM org.apache.catalina.core.ContainerBase removeChild
+GRAVE: ContainerBase.removeChild: destroy: 
+org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] in state [STARTING_PREP]
+	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:409)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:299)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.undeploy(TomcatWebAppBuilder.java:1524)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.undeploy(TomcatWebAppBuilder.java:1505)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1254)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1087)
+	at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:130)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5378)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+avr. 18, 2016 10:50:23 PM org.apache.catalina.core.ContainerBase addChildInternal
+GRAVE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.tomee.catalina.TomEERuntimeException: org.apache.openejb.OpenEJBException: Unable to load servlet class: tp4.Main: tp4.Main
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1257)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1087)
+	at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:130)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5378)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.openejb.OpenEJBException: Unable to load servlet class: tp4.Main: tp4.Main
+	at org.apache.openejb.config.AnnotationDeployer$ProcessAnnotatedBeans.deploy(AnnotationDeployer.java:2113)
+	at org.apache.openejb.config.AnnotationDeployer$ProcessAnnotatedBeans.deploy(AnnotationDeployer.java:1843)
+	at org.apache.openejb.config.AnnotationDeployer.deploy(AnnotationDeployer.java:360)
+	at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:401)
+	at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:962)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1214)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: tp4.Main
+	at org.apache.openejb.core.TempClassLoader.loadClass(TempClassLoader.java:166)
+	at org.apache.openejb.core.TempClassLoader.loadClass(TempClassLoader.java:79)
+	at org.apache.openejb.config.AnnotationDeployer$ProcessAnnotatedBeans.deploy(AnnotationDeployer.java:2106)
+	... 21 more
+
+avr. 18, 2016 10:50:23 PM org.apache.catalina.startup.HostConfig deployWAR
+GRAVE: Erreur lors du déploiement de l'archive /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT.war de l'application web
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1083)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1880)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+avr. 18, 2016 10:50:23 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Deployment of web application archive /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT.war has finished in 412 ms
+avr. 18, 2016 10:50:23 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:50:23 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:50:23 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 526 ms
+avr. 18, 2016 10:54:01 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:54:01 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:54:01 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service Catalina
+avr. 18, 2016 10:54:01 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:54:01 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:54:01 PM org.apache.openejb.server.SimpleServiceManager stop
+INFOS: Stopping server services
+avr. 18, 2016 10:54:01 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFOS: Undeploying app: openejb
+avr. 18, 2016 10:54:01 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:54:01 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:54:05 PM org.apache.catalina.core.AprLifecycleListener init
+INFOS: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/honore/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+avr. 18, 2016 10:54:06 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:54:06 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:54:06 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: ********************************************************************************
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: OpenEJB http://openejb.apache.org/
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Startup: Mon Apr 18 22:54:07 CEST 2016
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Copyright 1999-2013 (C) Apache OpenEJB Project, All Rights Reserved.
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Version: 4.7.1
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Build date: 20140912
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Build time: 01:43
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: ********************************************************************************
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: openejb.home = /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee
+avr. 18, 2016 10:54:07 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: openejb.base = /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee
+avr. 18, 2016 10:54:07 PM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFOS: Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@3439f68d
+avr. 18, 2016 10:54:07 PM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFOS: Succeeded in installing singleton service
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.ConfigurationFactory init
+INFOS: openejb configuration file is '/Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/conf/tomee.xml'
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.system.apps=true'
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFOS: Configuring enterprise application: openejb
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Using openejb.deploymentId.format '{ejbName}'
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb openejb/Deployer: EjbDeployment(deployment-id=openejb/Deployer)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb openejb/ConfigurationInfo: EjbDeployment(deployment-id=openejb/ConfigurationInfo)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb MEJB: EjbDeployment(deployment-id=MEJB)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.AutoConfig createContainer
+INFOS: Auto-creating a container for bean openejb/Deployer: Container(type=STATELESS, id=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.config.AppInfoBuilder build
+INFOS: Enterprise application "openejb" loaded.
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating TransactionManager(id=Default Transaction Manager)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating SecurityService(id=Tomcat Security Service)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Container(id=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFOS: Assembling app: openejb
+avr. 18, 2016 10:54:07 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.jndiname.format={deploymentId}{interfaceType.openejbLegacyName}'
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=openejb/DeployerBusinessRemote) --> Ejb(deployment-id=openejb/Deployer)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/openejb/Deployer!org.apache.openejb.assembler.Deployer) --> Ejb(deployment-id=openejb/Deployer)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/openejb/Deployer) --> Ejb(deployment-id=openejb/Deployer)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=openejb/ConfigurationInfoBusinessRemote) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/openejb/ConfigurationInfo!org.apache.openejb.assembler.classic.cmd.ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/openejb/ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=MEJB) --> Ejb(deployment-id=MEJB)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/MEJB!javax.management.j2ee.ManagementHome) --> Ejb(deployment-id=MEJB)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/openejb/MEJB) --> Ejb(deployment-id=MEJB)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler deployMBean
+INFOS: Deployed MBean(openejb.user.mbeans:application=openejb,group=org.apache.openejb.assembler.monitoring,name=JMXDeployer)
+avr. 18, 2016 10:54:07 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFOS: Deployed Application(path=openejb)
+avr. 18, 2016 10:54:08 PM org.apache.openejb.server.SimpleServiceManager start
+INFOS:   ** Bound Services **
+avr. 18, 2016 10:54:08 PM org.apache.openejb.server.SimpleServiceManager printRow
+INFOS:   NAME                 IP              PORT  
+avr. 18, 2016 10:54:08 PM org.apache.openejb.server.SimpleServiceManager start
+INFOS: -------
+avr. 18, 2016 10:54:08 PM org.apache.openejb.server.SimpleServiceManager start
+INFOS: Ready!
+avr. 18, 2016 10:54:08 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 2328 ms
+avr. 18, 2016 10:54:08 PM org.apache.tomee.catalina.OpenEJBNamingContextListener bindResource
+INFOS: Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+avr. 18, 2016 10:54:08 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Resource(id=UserDatabase)
+avr. 18, 2016 10:54:08 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service Catalina
+avr. 18, 2016 10:54:08 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat (TomEE)/7.0.55 (1.7.1)
+avr. 18, 2016 10:54:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Déploiement de l'archive /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT.war de l'application web
+avr. 18, 2016 10:54:08 PM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFOS: ------------------------- localhost -> /
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFOS: Configuring enterprise application: /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.AutoConfig deploy
+INFOS: Configuring PersistenceUnit(name=book-pu)
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.AutoConfig logAutoCreateResource
+INFOS: Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'book-pu'.
+avr. 18, 2016 10:54:08 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Resource(id=Default JDBC Database)
+avr. 18, 2016 10:54:08 PM org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource readOnly
+INFOS: Disabling testOnBorrow since no validation query is provided
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.AutoConfig logAutoCreateResource
+INFOS: Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'book-pu'.
+avr. 18, 2016 10:54:08 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Resource(id=Default Unmanaged JDBC Database)
+avr. 18, 2016 10:54:08 PM org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource readOnly
+INFOS: Disabling testOnBorrow since no validation query is provided
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.AutoConfig setJtaDataSource
+INFOS: Adjusting PersistenceUnit book-pu <jta-data-source> to Resource ID 'Default JDBC Database' from 'bookDatabase'
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.AutoConfig setNonJtaDataSource
+INFOS: Adjusting PersistenceUnit book-pu <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+avr. 18, 2016 10:54:08 PM org.apache.openejb.config.AppInfoBuilder build
+INFOS: Enterprise application "/Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT" loaded.
+avr. 18, 2016 10:54:08 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFOS: Assembling app: /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT
+avr. 18, 2016 10:54:09 PM null
+INFOS: OpenJPA dynamically loaded a validation provider.
+avr. 18, 2016 10:54:09 PM org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory createDelegate
+INFOS: PersistenceUnit(name=book-pu, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 298ms
+avr. 18, 2016 10:54:09 PM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFOS: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@3439f68d
+avr. 18, 2016 10:54:09 PM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFOS: OpenWebBeans Container is starting...
+avr. 18, 2016 10:54:09 PM org.apache.webbeans.plugins.PluginLoader startUp
+INFOS: Adding OpenWebBeansPlugin : [CdiPlugin]
+avr. 18, 2016 10:54:09 PM org.apache.webbeans.plugins.PluginLoader startUp
+INFOS: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+avr. 18, 2016 10:54:09 PM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFOS: All injection points were validated successfully.
+avr. 18, 2016 10:54:09 PM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFOS: OpenWebBeans Container has started, it took 151 ms.
+avr. 18, 2016 10:54:09 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFOS: Deployed Application(path=/Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT)
+avr. 18, 2016 10:54:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Deployment of web application archive /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT.war has finished in 1 441 ms
+avr. 18, 2016 10:54:09 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:54:09 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:54:09 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 1563 ms
+avr. 18, 2016 10:54:27 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:54:27 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:54:27 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service Catalina
+avr. 18, 2016 10:54:27 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFOS: Undeploying app: /Users/honore/Documents/workspace/CAR_JEE/car-tp4/apache-tomee/webapps/ROOT
+avr. 18, 2016 10:54:27 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:54:27 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["ajp-bio-8009"]
+avr. 18, 2016 10:54:27 PM org.apache.openejb.server.SimpleServiceManager stop
+INFOS: Stopping server services
+avr. 18, 2016 10:54:27 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFOS: Undeploying app: openejb
+avr. 18, 2016 10:54:27 PM org.apache.openejb.assembler.classic.Assembler destroyResource
+INFOS: Closing DataSource: Default JDBC Database
+avr. 18, 2016 10:54:27 PM org.apache.openejb.assembler.classic.Assembler destroyResource
+INFOS: Closing DataSource: Default Unmanaged JDBC Database
+avr. 18, 2016 10:54:27 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8080"]
+avr. 18, 2016 10:54:27 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["ajp-bio-8009"]

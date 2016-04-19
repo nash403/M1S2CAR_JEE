@@ -22,6 +22,7 @@
     <persistence-unit name="book-pu" transaction-type="JTA">
         <jta-data-source>bookDatabase</jta-data-source>
         <class>car.tp4.Book</class>
+        <class>car.tp4.Author</class>
         <properties>
             <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
         </properties>
