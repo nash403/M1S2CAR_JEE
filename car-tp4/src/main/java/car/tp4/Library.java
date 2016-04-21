@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContextType;
 import javax.persistence.Query;
 
 @Stateful
-public class BooksManager implements BooksManagerItf {
+public class Library implements LibraryItf {
 
 	@PersistenceContext(unitName = "book-pu", type = PersistenceContextType.EXTENDED)
 	private EntityManager em = Persistence.createEntityManagerFactory( "book-pu" ).createEntityManager();

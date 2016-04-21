@@ -18,7 +18,7 @@ public class Main extends HttpServlet {
 	private static final long serialVersionUID = -4771783296240803993L;
 	
 	@EJB(name="BooksManager")
-	private BooksManagerItf booksManagerBean;
+	private LibraryItf booksManagerBean;
 	
 //	public Main(){
 //		booksManagerBean = new BooksManager();

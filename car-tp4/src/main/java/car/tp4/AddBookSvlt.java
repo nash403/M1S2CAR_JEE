@@ -16,7 +16,7 @@ public class AddBookSvlt extends HttpServlet {
 	private static final long serialVersionUID = 473375328599205467L;
 	
 	@EJB(name="BooksManager")
-	private BooksManagerItf booksManagerBean = new BooksManager();
+	private LibraryItf booksManagerBean = new Library();
 
 	
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
