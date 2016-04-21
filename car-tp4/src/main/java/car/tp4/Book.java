@@ -35,6 +35,6 @@ public class Book {
     public void setTitle(String title) { this.title = title; }
     
     public String toString(){
-    	return title + " (Author: "+author+")";
+    	return title + " ("+author+")";
     }
 }
