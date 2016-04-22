@@ -1,34 +1,34 @@
 package car.tp4;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
-
 import javax.ejb.EJB;
-import javax.servlet.ServletException;
+import javax.servlet.ServletConfig;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
+@WebServlet(urlPatterns = "/car/tp4", loadOnStartup = 1, asyncSupported = true)
 public class Main extends HttpServlet {
-	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -4771783296240803993L;
-	
-	@EJB(name="Library")
+
+	@EJB(name = "Library")
 	private LibraryItf bibliotheque;
-	
-	public void init(){
+
+	@Override
+	public void init(ServletConfig config) {
 		bibliotheque = new Library();
-		bibliotheque.init();
+		config.getServletContext().setAttribute("BIBLI", bibliotheque);
+		System.out.println("[Application Startup] Ok");
 	}
-	
-	public void service(HttpServletRequest request, HttpServletResponse response)
-			throws IOException, ServletException {
-		System.out.println("on passe là");
-		request.setAttribute("BIBLI", bibliotheque);
-		this.getServletContext().getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request, response );
-	}
+
+	// @Override
+	// public void service(HttpServletRequest request, HttpServletResponse
+	// response)
+	// throws IOException, ServletException {
+	// request.setAttribute("BIBLI", bibliotheque);
+	// this.getServletContext().getRequestDispatcher("/WEB-INF/index.jsp")
+	// .forward(request, response);
+	// }
 }

@@ -9,27 +9,31 @@ import javax.ejb.Stateful;
 @Stateful
 public class Library implements LibraryItf {
 
-	// @PersistenceContext(unitName = "book-pu", type =
-	// PersistenceContextType.EXTENDED)
-	// private EntityManager em = Persistence.createEntityManagerFactory(
-	// "book-pu" ).createEntityManager();
+	// @PersistenceContext
+	// // (unitName = "book-pu", type = PersistenceContextType.EXTENDED)
+	// private EntityManager em;
 
 	List<Book> books = new ArrayList<Book>();
-	
+
+	public Library() {
+		init();
+	}
+
 	@Override
-	public void init(){
-		System.out.println("init library");
-		books.add(new Book(new Author("Honore de Balzac"),"Le Pere Goriot"));
-		books.add(new Book(new Author("Honore de Balzac"),"Les Chouans"));
-		books.add(new Book(new Author("Victor Hugo"),"Les Miserables"));
+	public void init() {
+		// Query q = em.createQuery("DELETE from Book");
+		// System.out.println("init library " + q);
+		// q.executeUpdate();
+		System.out.println("init Library");
+		addBook(new Book(new Author("Honore de Balzac"), "Le Pere Goriot"));
+		addBook(new Book(new Author("Honore de Balzac"), "Les Chouans"));
+		addBook(new Book(new Author("Victor Hugo"), "Les Miserables"));
 	}
 
 	@Override
 	public void addBook(Book book) {
-		System.out.println("add");
-		// Book b1 = new Book("Honore de Balzac", "Le Pere Goriot");
-		// Book b2 = new Book("Honore de Balzac", "Les Chouans");
-		// Book b3 = new Book("Victor Hugo", "Les Miserables");
+		System.out.println("add " + book);
+
 		// em.getTransaction().begin();
 		// em.persist(book);
 		// em.getTransaction().commit();
@@ -39,16 +43,16 @@ public class Library implements LibraryItf {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Book> getAllBooks() {
-		System.out.println("la");
-//		Query q = em.createQuery("SELECT b from Book as b");
-//		return q.getResultList();
+		// System.out.println("la");
+		// Query q = em.createQuery("SELECT b from Book as b");
+		// return q.getResultList();
 		return books;
 	}
 
 	@Override
 	public List<Author> getAllAuthors() {
-//		Query q = em.createQuery("SELECT a from Author as a");
-//		return q.getResultList();
+		// Query q = em.createQuery("SELECT a from Author as a");
+		// return q.getResultList();
 		HashSet<Author> auteurs = new HashSet<Author>();
 
 		for (Book b : books) {

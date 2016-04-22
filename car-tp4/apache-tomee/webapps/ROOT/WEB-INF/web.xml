@@ -4,24 +4,24 @@
  	<servlet-name>Main</servlet-name>
  	<servlet-class>car.tp4.Main</servlet-class>
  </servlet>
+ <servlet>
+ 	<servlet-name>AddBook</servlet-name>
+ 	<servlet-class>car.tp4.AddBookSvlt</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>ListBook</servlet-name>
+ 	<servlet-class>car.tp4.ListBookSvlt</servlet-class>
+ </servlet>
  <servlet-mapping>
  	<servlet-name>Main</servlet-name>
  	<url-pattern>/car/tp4</url-pattern>
  </servlet-mapping>
  
- <servlet>
- 	<servlet-name>AddBook</servlet-name>
- 	<servlet-class>car.tp4.AddBookSvlt</servlet-class>
- </servlet>
  <servlet-mapping>
  	<servlet-name>AddBook</servlet-name>
  	<url-pattern>/car/tp4/add</url-pattern>
  </servlet-mapping>
  
- <servlet>
- 	<servlet-name>ListBook</servlet-name>
- 	<servlet-class>car.tp4.ListBookSvlt</servlet-class>
- </servlet>
  <servlet-mapping>
  	<servlet-name>ListBook</servlet-name>
  	<url-pattern>/car/tp4/list</url-pattern>

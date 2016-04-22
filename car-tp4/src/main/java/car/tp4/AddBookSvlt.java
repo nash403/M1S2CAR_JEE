@@ -2,7 +2,6 @@ package car.tp4;
 
 import java.io.IOException;
 
-import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,27 +13,29 @@ public class AddBookSvlt extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 473375328599205467L;
-	
-	@EJB(name="BooksManager")
-	private LibraryItf booksManagerBean = new Library();
 
-	
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
+	// @EJB(name = "Library")
+	// private LibraryItf bibliotheque;// = new Library();
+
+	@Override
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
-		System.out.println("Ajout livre");
-		String paramAuteur = request.getParameter( "author" );
-		String paramTitle = request.getParameter( "title" );
-		
+		String paramAuteur = request.getParameter("author");
+		String paramTitle = request.getParameter("title");
+
 		Author auteur = new Author(paramAuteur);
 		Book livre = new Book(auteur, paramTitle);
-		System.out.println("livre ajouté : "+livre);
+		System.out.println("livre ajouté : " + livre);
 
-	    request.setAttribute( "livre", livre );
-	    
-	    booksManagerBean.addBook(livre);
+		// LibraryItf bibli = (LibraryItf)
+		// this.getServletContext().getAttribute(
+		// "BIBLI");
+		LibraryItf bibliotheque = (LibraryItf) this.getServletContext()
+				.getAttribute("BIBLI");
+		bibliotheque.addBook(livre);
+		request.setAttribute("livre", livre);
 
-
-	    this.getServletContext().getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request, response );
+		this.getServletContext().getRequestDispatcher("/index.jsp")// "/WEB-INF/index.jsp")
+				.forward(request, response);
 	}
-
 }

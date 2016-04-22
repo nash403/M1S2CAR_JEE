@@ -10,15 +10,19 @@ import javax.persistence.ManyToOne;
 public class Book {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-    private Author author; 
-    private String title; 
-    
-    public Book() {} 
-    public Book(Author author, String title) { 
-        this.author = author; 
-        this.title = title; } 
+	private Author author;
+	private String title;
+	private String year;
+
+	public Book() {
+	}
+
+	public Book(Author author, String title) {
+		this.author = author;
+		this.title = title;
+	}
 
 	public long getId() {
 		return id;
@@ -27,14 +31,34 @@ public class Book {
 	public void setId(long id) {
 		this.id = id;
 	}
-    
-    @ManyToOne
-    public Author getAuthor() { return author; } 
-    public void setAuthor(Author author) { this.author = author; } 
-    public String getTitle() { return title; } 
-    public void setTitle(String title) { this.title = title; }
-    
-    public String toString(){
-    	return title + " ("+author+")";
-    }
+
+	public String getYear() {
+		return year;
+	}
+
+	public void setYear(String annee) {
+		year = annee;
+	}
+
+	@ManyToOne
+	public Author getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Author author) {
+		this.author = author;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	@Override
+	public String toString() {
+		return title + " (" + author + ")";
+	}
 }
