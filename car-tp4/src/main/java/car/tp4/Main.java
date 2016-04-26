@@ -18,7 +18,7 @@ public class Main extends HttpServlet {
 
 	@Override
 	public void init(ServletConfig config) {
-		bibliotheque = new Library();
+		bibliotheque.init();// = new Library();
 		config.getServletContext().setAttribute("BIBLI", bibliotheque);
 		System.out.println("[Application Startup] Ok");
 	}

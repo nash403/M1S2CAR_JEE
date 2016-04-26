@@ -6,8 +6,11 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>CAR TP4 - Exo 2</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	</head>
-	<body>
+	<body class="container text-center" style="margin-top:80px;">
 		<%
 		
 		//String author = request.getParameter("author");
@@ -24,7 +27,7 @@
 		%>
 		
 		<h1>Ajout d'un livre</h1>
-		<a href="/list.jsp">Voir la liste des livres</a>
+		<a href="/car/tp4/list">Voir la liste des livres</a>
 		<form action="/car/tp4/add" method="GET">
 			Auteur : <input type="text" name="author"><br/>
 			Titre : <input type="text" name="title"><br/>
