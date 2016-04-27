@@ -13,9 +13,6 @@ import javax.persistence.PersistenceContext;
 @Stateful
 public class Panier implements PanierItf {
 
-	@PersistenceContext
-	private EntityManager em;
-
 	@EJB(name = "Library")
 	private LibraryItf bibliotheque;
 
@@ -61,9 +58,10 @@ public class Panier implements PanierItf {
 
 	@Override
 	@Remove
-	public void confirmOrder() {
+	public Commande confirmOrder() {
 		System.out.println("Order confirmed for " + getItems().size() + " items.");
 		Commande commande = new Commande(order.keySet(), order.values());
+		return commande;
 //		em.persist(commande);
 	}
 

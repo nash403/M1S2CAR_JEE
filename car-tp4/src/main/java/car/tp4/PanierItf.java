@@ -10,7 +10,7 @@ public interface PanierItf {
 	public void addItem(int idBook);
 	public void removeItem(int idBook);
 	public Set<Map.Entry<Book,Integer>> getItems();
-	public void confirmOrder();
+	public Commande confirmOrder();
 	public int size();
 
 }
