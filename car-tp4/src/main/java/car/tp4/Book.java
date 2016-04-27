@@ -9,7 +9,10 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Book {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
+	@ManyToOne
 	private Author author;
 	private String title;
 	private String year;
@@ -23,8 +26,6 @@ public class Book {
 		this.year = year;
 	}
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}
@@ -41,7 +42,6 @@ public class Book {
 		year = annee;
 	}
 
-	@ManyToOne
 	public Author getAuthor() {
 		return author;
 	}
@@ -60,10 +60,6 @@ public class Book {
 
 	@Override
 	public int hashCode() {
-//		final int prime = 31;
-//		int result = 1;
-//		result = prime * result + (int) (id ^ (id >>> 32));
-//		return result;
 		return id;
 	}
 

@@ -12,7 +12,6 @@ import javax.persistence.OneToMany;
 @Entity
 public class Author {
 
-//	private long id;
 	private String name;
 	private Collection<Book> books;
 
@@ -23,14 +22,6 @@ public class Author {
 	public Author(String name) {
 		this.name = name;
 	}
-
-//	public long getId() {
-//		return id;
-//	}
-
-//	public void setId(long id) {
-//		this.id = id;
-//	}
 
 	@OneToMany
 	public Collection<Book> getBooks() {
@@ -46,13 +37,12 @@ public class Author {
 	}
 
 	@Id
-//	@GeneratedValue(strategy = GenerationType.AUTO)
 	public String getName() {
 		return this.name;
 	}
 
 	@Override
 	public String toString() {
-		return name;//+id+"-";
+		return name;
 	}
 }
